@@ -97,7 +97,7 @@ nav ul li a{
     width: 10%;
   }
   .hero-text{
-    margin-top:15%;
+    margin-top:20%;
     font-size: 25px;
   }
   .hero-text h1{
@@ -355,15 +355,89 @@ form input, form textarea{
 
 }
 
+nav .fas{
+  display: none;
+}
+
 /* Always keep the common breakpoints for responsive design in mind. 
 The former matches common screen sizes (480px, 768px, 1024px, and 1280px). */
-
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 768px) {
+  #header{
+    background: black;
+  }
+  .logo{
+    font-size: 20px;
+  }
   .hero-text{
-    margin-top: 100%;
-    font-size: 18px;
+    margin-top: 50%;
+    font-size: 16px;
   }
   .hero-text h1{
-    font-size: 25px;
+    font-size: 30px;
   }
+  #sidemenu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially off-screen */
+    width: 250px;
+    height: 100vh;
+    background: #333; /* Example background color */
+    transition: left 0.3s; /* Add transition for smooth animation */
+}
+
+#sidemenu.show {
+    left: 0; /* Move onto the screen */
+}
+
+/* Additional styling for navigation */
+nav {
+    background: #333; /* Example background color */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Additional styles for hero section */
+.hero-text {
+    color: #fff;
+    margin-top: 50px; /* Example margin */
+}
+
+  .d-block,
+  .d-block-col-1,
+  .d-block-col-2 {
+      margin-left: 0;
+      width: 100%;
+      height: auto;
+  }
+
+  .custom-button,
+  .custom-button1,
+  .custom-button-white {
+      width: 100%;
+  }
+
+  .e-block {
+      margin-left: 0;
+  }
+
+
 }

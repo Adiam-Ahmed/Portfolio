@@ -31,4 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+
+
+});
+
+document.getElementById('menuBtn').addEventListener('click', function() {
+    document.getElementById('sidemenu').classList.add('show');
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('sidemenu').classList.remove('show');
 });
