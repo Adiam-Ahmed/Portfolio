@@ -36,10 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-document.getElementById('menuBtn').addEventListener('click', function() {
-    document.getElementById('sidemenu').classList.add('show');
-});
+const sidemenu = document.querySelector(".sidemenu");
+const open = document.querySelector(".open");
+const closeBtn = document.querySelector(".close");
 
-document.getElementById('closeBtn').addEventListener('click', function() {
-    document.getElementById('sidemenu').classList.remove('show');
-});
+open.addEventListener("click", showMenu);
+closeBtn.addEventListener("click", closeMenu);
+
+function showMenu() {
+    sidemenu.style.display = 'flex';
+    sidemenu.style.top = '0';
+}
+
+function closeMenu() {
+    sidemenu.style.top = '-100vh'; 
+}

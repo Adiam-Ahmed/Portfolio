@@ -1,18 +1,17 @@
-@font-face {
-    font-family: 'Sixtyfour';
-    src: url('./static/Sixtyfour-Regular-VariableFont_BLED\,SCAN.ttf') format('truetype-variations'),
-         url('./static/Sixtyfour-Regular.ttf') format('truetype');
-  }
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background:black;
-    color: whitesmoke;
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #190B14;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #header{
     width: 100%;
@@ -21,142 +20,110 @@ body{
     background-size: cover;
     background-position: center;
 }
-.logo {
-    font-family: 'Sixtyfour', sans-serif;
-    font-size: 48px;
-
-}
-
-.container{
-    padding: 10px;
-}
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  height: 80px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-
+nav img {
+  width: 100px;
+  order: -1; 
+}
+nav .sidemenu{
+  display: flex;
+  list-style: none;
+}
+nav .sidemenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #190B14;
+  font-size: 1.5rem;
+}
+nav .sidemenu li a:hover{
+  background: #C7B7A3;
+}
+nav .open{
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .sidemenu .close , .icons i{
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+nav .logo{
+  margin:6px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-}
 
-.hvr-float-shadow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(241, 239, 239, 0);
-    position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  .hvr-float-shadow:before {
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    top: 100%;
-    left: 5%;
-    height: 10px;
-    width: 90%;
-    opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(248, 247, 247, 0.727) 0%, rgba(0, 0, 0, 0) 80%);
-    /* W3C */
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform, opacity;
-    transition-property: transform, opacity;
-  }
-  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    /* move the element up by 5px */
-  }
-  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
-    opacity: 1;
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-  }
-  .carousel-control-prev{
-    width: 10%;
-  }
-  .carousel-control-next{
-    width: 10%;
-  }
-  .hero-text{
+.hero-text{
     margin-top:20%;
     font-size: 25px;
-  }
-  .hero-text h1{
+}
+.hero-text h1{
     font-size: 60px;
     margin-top: 20px;
-  }
+}
 
-  .hero-text p{
+.hero-text p{
     margin-top: 10px;
     font-size: medium
-  }
-
-  #demo{
+}
+#demo{
     padding: 10px;
-  }
-  .d-block{
+}
+.d-block{
     margin-left: 10%;
     width: 100%;
     height: 80vh;
-  }
-  .custom-button{
+}
+.custom-button{
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 25px;
     width:25%;
-  }
-  .custom-button60{
+}
+.custom-button60{
     background-image: linear-gradient(to right, #7678ed 60%, #ffffff 50%);
-  }
-  .custom-button70{
+}
+.custom-button70{
     background-image: linear-gradient(to right, #7678ed 70%, #ffffff 40%);
-  }
-  .custom-button75{
+}
+.custom-button75{
     background-image: linear-gradient(to right, #7678ed 75%, #ffffff 50%);
-  }
-  .custom-button80{
+}
+.custom-button80{
     background-image: linear-gradient(to right, #7678ed 80%, #ffffff 50%);
-  }
-  .custom-button85{
+}
+.custom-button85{
     background-image: linear-gradient(to right, #7678ed 85%, #ffffff 70%);
-  }
-  .custom-button90{
+}
+.custom-button90{
     background-image: linear-gradient(to right, #7678ed 90%, #ffffff 70%);
-  }
+}
 
 
-  .skill-header h2{
-    color: #7678ed;
+.skill-header h2{
+    color: #d0af74;
     margin: 25px 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 
-  #skill-row {
+#skill-row {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 .d-block-col-1, .d-block-col-2 {
     flex: 1; 
     margin-left: 10%;
@@ -192,14 +159,24 @@ nav ul li a{
   text-align: center;
 }
 
+.carousel-control-prev{
+  width: 10%;
+}
+.carousel-control-next{
+  width: 10%;
+}
+
 #about{
   padding: 80px 0;
+  margin-left: 10%;
 
 }
 .about-row{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 .about-col-1{
   flex-basis: 35%;
@@ -292,6 +269,10 @@ a{
 .projects-list div:hover{
   transform: translateY(-10px);
 }
+
+#contact{
+  padding: 10%;
+}
 .contact-left{
   flex-basis: 35%;
 }
@@ -355,72 +336,37 @@ form input, form textarea{
 
 }
 
-nav .fas{
-  display: none;
-}
 
-/* Always keep the common breakpoints for responsive design in mind. 
-The former matches common screen sizes (480px, 768px, 1024px, and 1280px). */
-@media screen and (max-width: 768px) {
-  #header{
-    background: black;
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 600px) {
+  nav .sidemenu{
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #C7B7A3;
+      transition: top 2s ease;
+      display: none;
   }
-  .logo{
-    font-size: 20px;
+  nav .sidemenu .close{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
   }
-  .hero-text{
-    margin-top: 50%;
-    font-size: 16px;
+  nav .open{
+      display: block;
   }
-  .hero-text h1{
-    font-size: 30px;
+  nav .sidemenu li a:hover{
+      background: none;
+      color:#190B14;
+      font-size: 1.6rem;
   }
-  #sidemenu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Initially off-screen */
-    width: 250px;
-    height: 100vh;
-    background: #333; /* Example background color */
-    transition: left 0.3s; /* Add transition for smooth animation */
-}
-
-#sidemenu.show {
-    left: 0; /* Move onto the screen */
-}
-
-/* Additional styling for navigation */
-nav {
-    background: #333; /* Example background color */
-    padding: 10px 20px;
-}
-
-.navbar-brand {
-    color: #fff;
-    font-size: 24px;
-}
-
-.navbar-nav {
-    list-style: none;
-}
-
-.navbar-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navbar-nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Additional styles for hero section */
-.hero-text {
-    color: #fff;
-    margin-top: 50px; /* Example margin */
-}
-
   .d-block,
   .d-block-col-1,
   .d-block-col-2 {
@@ -432,12 +378,75 @@ nav {
   .custom-button,
   .custom-button1,
   .custom-button-white {
-      width: 100%;
+    width: 100%;
   }
 
   .e-block {
-      margin-left: 0;
+        margin-left: 0;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    margin-bottom: 20px; 
+  }
+  .titles-links {
+    font-size: 16px; 
+    margin-right: 20px; 
+  }
   }
 
-
+  /* Media Query for Tablets */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  nav .sidemenu{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #C7B7A3;
+    transition: top 2s ease;
+    display: none;
 }
+nav .sidemenu .close{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+nav .open{
+    display: block;
+}
+nav .sidemenu li a:hover{
+    background: none;
+    color:#190B14;
+    font-size: 1.6rem;
+}
+.d-block,
+.d-block-col-1,
+.d-block-col-2 {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.custom-button,
+.custom-button1,
+.custom-button-white {
+  width: 100%;
+}
+
+.e-block {
+      margin-left: 0;
+}
+  .about-col-1 {
+    flex-basis: 40%;
+  }
+  .about-col-2 {
+    flex-basis: 55%; 
+  }
+}
+
