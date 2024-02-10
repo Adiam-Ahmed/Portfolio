@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     links.forEach(function(link) {
         link.addEventListener("click", function() {
+            event.preventDefault()
             // Check if the clicked link already has the 'active-link' class
             const isActive = this.classList.contains("active-link");
+            
 
             // Remove 'active-link' class from all links
             links.forEach(function(l) {

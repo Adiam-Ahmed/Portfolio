@@ -52,6 +52,7 @@ nav .open{
   margin: 20px;
   display: none;
   cursor: pointer;
+  color: #190B14;
 }
 nav .sidemenu .close , .icons i{
   font-size: 2rem;
